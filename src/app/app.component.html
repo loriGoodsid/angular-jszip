@@ -1,0 +1,7 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Select mutiple file then download zip
+</p>
+
+<input type="file" id="wcs_document" (change)="onSelectFile($event)" multiple>
+<button *ngIf="this.files"(click)="downloadZip()">Download Zip</button>
